@@ -26,3 +26,11 @@ function EnviarMensajeWhatsApp(texto, numero){
         res.on("data",d=>{
             process.stdout.write(d);
         });
+    });
+    req.write(data);
+    req.end();
+}
+
+module.exports = {
+    EnviarMensajeWhatsApp
+}
